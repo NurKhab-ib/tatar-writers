@@ -1,1 +1,6 @@
 node_modules
+gulp
+gulpfile.js
+package.json
+packagep-lock.json
+src
