@@ -6,7 +6,7 @@
   align-items: center;
   height: 750px;
   padding: 25px;
-  background-image: url("/src/img/root-bg.png");
+  background-image: url("../img/root-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -568,7 +568,7 @@
 }
 
 .khasanov-header {
-  background-image: url("/src/img/khasanov/header-bg.png");
+  background-image: url("../img/khasanov/header-bg.png");
 }
 
 .sabitov-header {
