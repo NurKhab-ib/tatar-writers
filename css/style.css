@@ -61,9 +61,6 @@
   }
 }
 @media (max-width: 600px) {
-  .header {
-    height: 400px;
-  }
   .header__title {
     font-size: 30px;
   }
@@ -275,6 +272,18 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.lng-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 5px;
+  background-color: rgb(255, 210, 60);
+}
+
 @media (max-width: 980px) {
   .lang, .home {
     top: 20px;
@@ -285,6 +294,9 @@
   .home {
     top: 75px;
     font-size: 30px;
+  }
+  .lng-warning {
+    font-size: 20px;
   }
 }
 .all-header {
