@@ -1,0 +1,111 @@
+.main {
+    font-family: 'Roboto Slab', sans-serif;
+    grid-area: main;
+    margin: 0;
+    padding: 5vh 5vw;
+
+    &__blocks-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    &__block {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border-radius: 45px;
+        background-color: #00A84B;
+        background-size: cover;
+        color: #fff;
+        transition: all 0.3s ease 0s;
+
+        &-title {
+            margin: 10px auto;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .main__photo-overlay {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            opacity: 0;
+            border-radius: 45px;
+            transition: all 0.3s ease 0s;
+        }
+
+        &:hover {
+            box-shadow: 10px 10px 0px rgba(0, 0, 0, .7);
+            transform: translate(-10px, -10px);
+
+            .main__photo-overlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    .eniki-block {
+        background: url('../img/root-writers/Eniki.png') center;
+    }
+
+    .yunis-block {
+        background: url('../img/root-writers/Yunis.png') center;
+    }
+    
+    .khasanov-block {
+        background: url('../img/root-writers/Khasanov.png') center;
+    }
+
+    .sabitov-block {
+        background: url('../img/root-writers/Sabitov.png') center;
+    }
+
+    &__photo-overlay-button {
+        border: 3px solid #00a84c;
+        border-radius: 10px;
+        color: #fff;
+        padding: 10px;
+
+        &:hover {
+            background-color: #00a84ca1;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .main__block {
+        width: 300px;
+        height: 300px;
+        margin: 0 25px;
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .main__block {
+        width: 300px;
+        height: 300px;
+    }
+}
